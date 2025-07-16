@@ -1,59 +1,126 @@
-# RoutingApp
+# Angular Routing Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.0.
+A modern single-page application built with Angular that demonstrates advanced routing and component features.
 
-## Development server
+## Features
 
-To start a local development server, run:
+### Navigation
+- Responsive navigation bar with dynamic scroll behavior
+- Hash-based routing strategy
+- Active route highlighting
+- Automatic scroll restoration
 
+### Components
+1. **Home**
+   - Landing page with avatar display
+   - Responsive layout
+   - Custom star component integration
+
+2. **About**
+   - Two-column content layout
+   - Background color customization
+   - Responsive text formatting
+
+3. **Portfolio**
+   - Grid layout for project showcase
+   - Modal image viewer
+   - Hover effects with opacity transitions
+   - Dynamic image loading
+
+4. **Contact**
+   - Contact form with validation
+   - Contact information display
+   - Responsive two-column layout
+
+5. **Shared Components**
+   - Star Component
+     - Customizable color through input properties
+     - Reusable across multiple sections
+   - Navbar Component
+     - Scroll-aware behavior
+     - Dynamic padding adjustments
+   - Footer Component
+     - Social media links
+     - Copyright information
+     - Location details
+
+### Styling
+- CSS Variables for theme colors
+- Bootstrap integration
+- Font Awesome icons
+- Responsive design
+- Custom animations and transitions
+
+### Routing Features
+- Path-based navigation
+- Default route redirection
+- 404 page handling
+- Route titles
+- Child routes support
+
+## Technical Details
+
+### Prerequisites
+- Node.js (v14 or higher)
+- Angular CLI (v20.1.0)
+- NPM (v6 or higher)
+
+### Installation
 ```bash
+# Clone the repository
+git clone [repository-url]
+
+# Install dependencies
+npm install
+
+# Start development server
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+### Project Structure
+```
+src/
+├── app/
+│   ├── about/
+│   ├── contact/
+│   ├── footer/
+│   ├── home/
+│   ├── navbar/
+│   ├── notfound/
+│   ├── portfolio/
+│   └── star/
+├── assets/
+│   └── images/
+└── styles.css
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Built With
+- Angular 20.1.0
+- Bootstrap 5
+- Font Awesome
+- Angular Router
 
+### Development Commands
 ```bash
-ng generate --help
-```
+# Generate new component
+ng generate component new-component
 
-## Building
+# Build for production
+ng build --configuration production
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
+# Run tests
 ng test
+
+# Check for linting errors
+ng lint
 ```
 
-## Running end-to-end tests
+## Contributing
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-For end-to-end (e2e) testing, run:
 
-```bash
-ng e2e
-```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
