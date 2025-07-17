@@ -9,6 +9,7 @@ export const appConfig: ApplicationConfig = {
     provideZonelessChangeDetection(),
     provideRouter(
       routes,
+      withHashLocation(),
       withInMemoryScrolling({ scrollPositionRestoration: 'top' }),
     ),
     provideClientHydration(withEventReplay())
